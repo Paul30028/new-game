@@ -1,0 +1,12 @@
+{
+  "id": "T001",
+  "prompt_file": "coordination/tasks/T001.md",
+  "result_file": "coordination/tasks/T001.result.md",
+  "allowed_paths": ["coordination/tasks/T001.md", "coordination/tasks/T001.result.md"],
+  "providers": ["antigravity", "codex", "deepseek"],
+  "max_attempts": 3,
+  "timeout_seconds": 1200,
+  "verify": [],
+  "auto_accept": false,
+  "allow_paid": false
+}

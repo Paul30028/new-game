@@ -1,0 +1,23 @@
+{
+  "max_attempts_per_utc_day": 12,
+  "quota_cooldown_seconds": 1800,
+  "providers": {
+    "antigravity": {
+      "enabled": true,
+      "billing": "subscription",
+      "command": ["{root}/.relay/bin/agy.exe", "-p", "{prompt}", "--output-format", "json", "--mode", "auto", "--sandbox", "--print-timeout", "20m"]
+    },
+    "codex": {
+      "enabled": false,
+      "billing": "subscription",
+      "command": ["node", "REPLACE_WITH_CODEX_JS_PATH", "exec", "--sandbox", "workspace-write", "--json", "-"],
+      "stdin": true
+    },
+    "deepseek": {
+      "enabled": false,
+      "billing": "metered",
+      "allow_paid": false,
+      "command": ["REPLACE_WITH_DSH_EXE_OR_NODE", "--profile", "headless", "{prompt}"]
+    }
+  }
+}
